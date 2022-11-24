@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="inure_primary_dark">#266bc8</color>
+    <color name="inure_primary">#3f51b5</color>
+    <color name="inure_accent">#ff4081</color>
+
+    <color name="inure_primary_text">#F4F4F4</color>
+    <color name="inure_secondary_text">#757575</color>
+    <color name="inure_divider">#BDBDBD</color>
+
+    <color name="inure_background">#121212</color>
+</resources>

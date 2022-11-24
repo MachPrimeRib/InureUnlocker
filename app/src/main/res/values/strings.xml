@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Inure Unlocker</string>
+    <string name="unlocker_desc">Thank you for your contribution. Click the button below to unlock the full features of Inure.</string>
+    <string name="activate">Activate</string>
+    <string name="app_not_installed">App not installed!</string>
+</resources>
