@@ -13,6 +13,7 @@ android {
         targetSdk 33
         versionCode 2
         versionName "build_v2"
+        resConfigs "en"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
