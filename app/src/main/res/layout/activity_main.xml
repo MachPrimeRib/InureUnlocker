@@ -7,17 +7,28 @@
     android:background="@color/inure_background"
     tools:context=".activities.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        app:srcCompat="@drawable/ic_main_app_icon_big"
+        tools:ignore="ContentDescription" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:drawablePadding="40dp"
         android:gravity="center"
         android:text="@string/unlocker_desc"
         android:textColor="@color/inure_secondary_text"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:drawableTopCompat="@mipmap/ic_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,16 +36,18 @@
 
     <Button
         android:id="@+id/activate"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/inure_primary_dark"
         android:text="@string/activate"
         android:textAllCaps="false"
-        android:textColor="@color/inure_primary_dark"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
+        android:stateListAnimator="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.61" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
