@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.82"
-        app:srcCompat="@drawable/ic_main_app_icon_big"
+        app:srcCompat="@drawable/ic_app_icon"
         tools:ignore="ContentDescription" />
 
     <TextView
