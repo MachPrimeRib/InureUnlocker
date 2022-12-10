@@ -11,8 +11,8 @@ android {
         applicationId "app.simple.inureunlocker"
         minSdk 23
         targetSdk 33
-        versionCode 3
-        versionName "build_v3"
+        versionCode 4
+        versionName "build_v4"
         resConfigs "en"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -30,12 +30,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        github {
+            dimension "version"
+            versionNameSuffix "-github"
+        }
+        play {
+            dimension "version"
+            versionNameSuffix "-play"
+        }
     }
 }
 

@@ -3,4 +3,5 @@
     <string name="unlocker_desc">Thank you for your contribution. Click on the \"Activate\" button to unlock the full features of Inure.</string>
     <string name="activate">Activate</string>
     <string name="app_not_installed">App not installed!</string>
+    <string name="rate_me">Rate Me!</string>
 </resources>

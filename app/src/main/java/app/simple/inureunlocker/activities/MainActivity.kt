@@ -7,17 +7,22 @@ import androidx.appcompat.app.AppCompatActivity
 import app.simple.inureunlocker.R
 import app.simple.inureunlocker.constants.IntentConstants
 import app.simple.inureunlocker.utils.ActivityUtils
+import app.simple.inureunlocker.utils.AppUtils
+import app.simple.inureunlocker.utils.IntentHelper.asUri
+import app.simple.inureunlocker.utils.IntentHelper.openInBrowser
 import app.simple.inureunlocker.utils.MarketUtils
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var activate: Button
+    private lateinit var rate: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         activate = findViewById(R.id.activate)
+        rate = findViewById(R.id.rate)
 
         activate.setOnClickListener {
             kotlin.runCatching {
@@ -31,6 +36,15 @@ class MainActivity : AppCompatActivity() {
                 it.printStackTrace()
                 Toast.makeText(baseContext, R.string.app_not_installed, Toast.LENGTH_SHORT).show()
                 MarketUtils.openAppOnPlayStore(baseContext, "app.simple.inure")
+            }
+        }
+
+        rate.setOnClickListener {
+            if (AppUtils.isGithubFlavor()) {
+                // Open GumRoad link in Browser
+                getString(R.string.gumroad_link).asUri().openInBrowser(baseContext)
+            } else {
+                MarketUtils.openAppOnPlayStore(baseContext, packageName)
             }
         }
     }
