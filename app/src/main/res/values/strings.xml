@@ -4,4 +4,7 @@
     <string name="activate">Activate</string>
     <string name="app_not_installed">App not installed!</string>
     <string name="rate_me">Rate Me!</string>
+    <string name="menu">Menu</string>
+    <string name="hide_app">Hide App</string>
+    <string name="show_app">Show App</string>
 </resources>

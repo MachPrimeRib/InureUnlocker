@@ -7,6 +7,31 @@
     android:background="@color/inure_background"
     tools:context=".activities.MainActivity">
 
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/ripple"
+        android:contentDescription="@string/menu"
+        android:src="@drawable/ic_more_vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/app_name"
+        android:textColor="@color/inure_primary_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintEnd_toStartOf="@+id/menu"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menu" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -39,11 +64,11 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/inure_primary_dark"
+        android:stateListAnimator="@null"
         android:text="@string/activate"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:stateListAnimator="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -11,8 +11,8 @@ android {
         applicationId "app.simple.inureunlocker"
         minSdk 23
         targetSdk 33
-        versionCode 4
-        versionName "build_v4"
+        versionCode 5
+        versionName "build_v5"
         resConfigs "en"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
