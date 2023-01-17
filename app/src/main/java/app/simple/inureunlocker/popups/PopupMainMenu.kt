@@ -3,6 +3,7 @@ package app.simple.inureunlocker.popups
 import android.content.ComponentName
 import android.content.pm.PackageManager
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
@@ -55,6 +56,6 @@ class PopupMainMenu(view: View) : BasePopupWindow() {
             }
         }
 
-        init(contentView, view)
+        init(contentView, view, Gravity.BOTTOM)
     }
 }
