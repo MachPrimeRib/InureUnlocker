@@ -56,6 +56,6 @@ class PopupMainMenu(view: View) : BasePopupWindow() {
             }
         }
 
-        init(contentView, view, Gravity.BOTTOM)
+        init(contentView, view, Gravity.BOTTOM or Gravity.END)
     }
 }
